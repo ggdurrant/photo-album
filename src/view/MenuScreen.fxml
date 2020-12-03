@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <VBox prefHeight="815.0" prefWidth="1131.0">
+         <children>
+          <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="1128.0">
+            <items>
+                  <ScrollPane fx:id="scrollPane2" hbarPolicy="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="600.0" />
+                  <AnchorPane fx:id="anchorPaneRight" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="519.0">
+                     <children>
+                        <HBox layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="526.0">
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="297.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true" />
+                              <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="244.0">
+                                 <children>
+                                    <Label fx:id="captionLabel" alignment="CENTER" maxHeight="72.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" prefHeight="72.0" prefWidth="300.0" text="Caption" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox prefHeight="21.0" prefWidth="242.0">
+                                       <children>
+                                          <Label fx:id="labelRightInfo3" prefHeight="21.0" prefWidth="52.0" text="Date">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="dateLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="180.0" text="1/1/11">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="hboxRightInfoBottom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="252.0">
+                                       <children>
+                                          <Label fx:id="labelRightInfo5" prefHeight="19.0" prefWidth="104.0" text="Tags">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="15.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <VBox prefHeight="133.0" prefWidth="152.0">
+                                             <children>
+                                                <Label fx:id="tag1" minWidth="-Infinity" text="Tag">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="60.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="tag2" text="Tag">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="60.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="tag3" text="Tag">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="60.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </items>
+          </SplitPane>
+            <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="1131.0">
+              <items>
+                  <ScrollPane fx:id="scrollPane1" hbarPolicy="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="600.0" />
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="476.0">
+                     <children>
+                        <VBox layoutX="95.0" prefHeight="476.0" prefWidth="365.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="426.0" text="Search">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="36.0" prefWidth="331.0">
+                                 <children>
+                                    <DatePicker fx:id="dateFrom" prefHeight="25.0" prefWidth="151.0">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </DatePicker>
+                                    <DatePicker fx:id="dateTo" prefHeight="25.0" prefWidth="151.0">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </DatePicker>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="21.0" prefWidth="331.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="169.0" text="Date from" />
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="168.0" text="Date to" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="29.0" prefWidth="331.0">
+                                 <children>
+                                    <TextField fx:id="tagField1" promptText="tag">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="valueField1" promptText="value">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="84.0" prefHeight="29.0" prefWidth="331.0">
+                                 <children>
+                                    <TextField fx:id="tagField2" promptText="tag">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="valueField2" promptText="value">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="119.0" prefHeight="29.0" prefWidth="331.0">
+                                 <children>
+                                    <TextField fx:id="tagField3" promptText="tag">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="valueField3" promptText="value">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="30.0" prefWidth="331.0">
+                                 <children>
+                                    <CheckBox fx:id="createAlbumCheck" mnemonicParsing="false" text="Create Album">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                    <CheckBox fx:id="dateCheck" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Date">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                    <CheckBox fx:id="tagValueCheck" layoutX="104.0" layoutY="10.0" mnemonicParsing="false" text="Tag-Value">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                    <Button fx:id="searchButton" mnemonicParsing="false" text="Search">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="7.0" right="7.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <Label alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="336.0" text="Photo">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="35.0" prefWidth="331.0">
+                                 <children>
+                                    <Button fx:id="addPhotoButton" mnemonicParsing="false" text="Add Photo">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="deletePhotoButton" mnemonicParsing="false" text="Delete Photo">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="displayButton" mnemonicParsing="false" text="Display">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="slideshowButton" mnemonicParsing="false" text="Slideshow">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="32.0" prefWidth="331.0">
+                                 <children>
+                                    <TextField fx:id="albumField" promptText="album">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="copyPhotoButton" mnemonicParsing="false" text="Copy Photo">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="movePhotoButton" mnemonicParsing="false" text="Move Photo">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="273.0" prefHeight="35.0" prefWidth="331.0">
+                                 <children>
+                                    <TextField fx:id="renameField" prefHeight="25.0" prefWidth="175.0" promptText="rename">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="renameCaptionButton" mnemonicParsing="false" text="Caption">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="renameAlbumButton" mnemonicParsing="false" text="Album ">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="32.0" prefWidth="331.0">
+                                 <children>
+                                    <TextField fx:id="newTagField" prefHeight="25.0" prefWidth="142.0" promptText="tag">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="addTagButton" mnemonicParsing="false" text="Add Tag">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="20.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="35.0" prefWidth="365.0">
+                                 <children>
+                                    <TextField fx:id="newValueField" prefHeight="25.0" prefWidth="142.0" promptText="value">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="deleteTagButton" mnemonicParsing="false" text="Delete Tag">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="38.0" prefWidth="331.0">
+                                 <children>
+                                    <Button fx:id="mainLogoutButton" mnemonicParsing="false" text="Logout">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="20.0" right="50.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="homeButton" mnemonicParsing="false" text="Home">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="20.0" right="50.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="mainQuitButton" mnemonicParsing="false" text="Quit">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

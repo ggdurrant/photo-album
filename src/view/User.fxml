@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+
+   <children>
+
+
+
+
+	  
+<HBox>
+   <children>
+   
+      <TableView fx:id="table" prefHeight="500.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="colalbumName" prefWidth="200.0" text="Name">
+				<cellValueFactory><PropertyValueFactory property="albumName" /></cellValueFactory>		  
+		  </TableColumn>
+		  
+          <TableColumn fx:id="colstartTime" prefWidth="121.5" text="Earliest Date">
+				<cellValueFactory><PropertyValueFactory property="startTime" /></cellValueFactory>		  
+		  </TableColumn>
+
+	          <TableColumn fx:id="colendTime" prefWidth="128.0" text="Latest Date">
+				<cellValueFactory><PropertyValueFactory property="endTime" /></cellValueFactory>		  
+		  </TableColumn>
+		  
+                <TableColumn fx:id="colphotoCount" prefWidth="100.5" text="# Photos">
+				<cellValueFactory>
+                        <PropertyValueFactory property="photoCount" />
+                     </cellValueFactory>		  
+		  </TableColumn>
+	  
+        </columns>
+      </TableView>
+
+		
+		 
+<VBox prefWidth="350.0">
+               <HBox prefHeight="30.0" prefWidth="350.0">
+                  <children>
+                     <Label alignment="CENTER" prefHeight="27.0" prefWidth="350.0" text="Search" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="41.0" prefWidth="350.0">
+                  <children>
+   		<DatePicker fx:id="dateFrom" minWidth="100.0" prefHeight="27.0" prefWidth="128.0" />
+           <DatePicker fx:id="dateTo" minWidth="100.0" prefHeight="27.0" prefWidth="137.0" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="27.0" prefWidth="350.0">
+                  <children>
+                     <Label text="Date From" />
+                     <Label text="Date To" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="54.0" prefWidth="350.0">
+                  <children>
+                     <TextField fx:id="tag1" promptText="tag" />
+                     <TextField fx:id="value1" promptText="value" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="62.0" prefWidth="350.0">
+                  <children>
+                     <TextField fx:id="tag2" promptText="tag" />
+                     <TextField fx:id="value2" promptText="value" />
+                  </children>
+               </HBox>
+               <HBox layoutX="10.0" layoutY="154.0" prefHeight="53.0" prefWidth="350.0">
+                  <children>
+                     <TextField fx:id="tag3" promptText="tag" />
+                     <TextField fx:id="value3" promptText="value" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="43.0" prefWidth="350.0">
+                  <children>
+                     <CheckBox fx:id="createAlbumCheck" mnemonicParsing="false" text="Create Album" />
+                     <CheckBox fx:id="dateCheck" mnemonicParsing="false" text="Date" />
+                     <CheckBox fx:id="tagValueCheck" mnemonicParsing="false" text="Tag-Value" />
+           <Button fx:id="searchButton" prefHeight="27.0" prefWidth="71.0" text="Search" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="27.0" prefWidth="350.0">
+                  <children>
+                     <Label text="Photo" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="41.0" prefWidth="350.0">
+                  <children>
+           <TextField fx:id="albumNameField" prefColumnCount="10" promptText="Album Name" />
+   		<Button fx:id="addAlbumButton" onAction="#addAlbum" text="Add Album" />
+                     <Button fx:id="deleteAlbumButton" mnemonicParsing="false" text="Delete Album" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <Button fx:id="addPhotoButton" mnemonicParsing="false" text="Add Photo" />
+                     <Button fx:id="deletePhotoButton" mnemonicParsing="false" text="Delete Photo" />
+                     <Button fx:id="displayButton" mnemonicParsing="false" text="Display" />
+                     <Button fx:id="slideshowButton" mnemonicParsing="false" text="Slideshow" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <TextField fx:id="albumDestinationField" promptText="album name" />
+                     <Button fx:id="copyPhotoButton" mnemonicParsing="false" text="Copy Photo" />
+                     <Button fx:id="movePhotoButton" mnemonicParsing="false" text="Move Photo" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <TextField fx:id="renameField" promptText="rename" />
+                     <Button fx:id="renameCaptionButton" mnemonicParsing="false" text="Caption" />
+                     <Button fx:id="renameAlbumButton" mnemonicParsing="false" text="Album" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <TextField fx:id="tagField" promptText="tag" />
+                     <Button fx:id="addTagButton" mnemonicParsing="false" onAction="#addTag" text="Add Tag" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <TextField fx:id="valueField" promptText="value" />
+                     <Button fx:id="deleteTagButton" mnemonicParsing="false" onAction="#deleteTag" text="Delete Tag" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="66.0" prefWidth="350.0">
+                  <children>
+                     <Button fx:id="mainLogout" mnemonicParsing="false" onAction="#logout" text="Logout" />
+                     <Button fx:id="mainQuit" mnemonicParsing="false" onAction="#quit" text="Quit" />
+                  </children>
+               </HBox>
+</VBox>
+   </children>
+</HBox>
+   </children>
+</VBox>
