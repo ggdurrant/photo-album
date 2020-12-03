@@ -53,18 +53,8 @@ public class LoginController extends SceneController{
 			nextStage("/view/AdminScreen.fxml");
 		}
 		
-//		// if already in userlist
-//		if(Admin.isUser(username)){
-//			// login to this user's account
-//			System.out.println("already in user list");
-//		}
-		
 		// else add user
 		else{
-//			Admin.addUser(username);
-			// enter this new user's account
-			//Admin.addUser(username);
-//			loadStage("/view/MenuScreen.fxml", u);
 			System.out.println("opening menu screen");
 			nextStage("/view/MenuScreen.fxml");
 //			System.out.println("creating new user: "+username);

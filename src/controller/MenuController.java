@@ -207,19 +207,6 @@ public class MenuController extends SceneController{
 		return tp;
 	}
 
-
-//	private void updatePhotoPreview() {
-//		Photo selectedPhoto = currentAlbum.getPhotos().get(selectedThumb);
-//		imageView.setImage(new Image(selectedPhoto.getURL()));
-//		captionLabel.setText(selectedPhoto.getCaption());
-////		labelRightInfo2.setText(selectedAlbum.getName());
-////		labelRightInfo4.setText(selectedPhoto.getDateString());
-//		ArrayList<String> tags = selectedPhoto.getTagsAsText();
-//		@SuppressWarnings("unchecked")
-//		ListView<String> container = (ListView<String>) hboxRightInfoBottom.getChildren().get(1);
-//		container.setItems(FXCollections.observableArrayList(tags));
-//	}
-
 	private AnchorPane createNewPhotoSquare(String caption, String URL) {
 
 		AnchorPane ap = new AnchorPane();
@@ -284,9 +271,6 @@ public class MenuController extends SceneController{
 //			}
 	}
 	
-//	public void mainLogoutPressed(ActionEvent e){
-//		loadStage("/view/LoginScreen.fxml", null);
-//	}
 	
 	public void mainQuitPressed(ActionEvent e){
 		Platform.exit();

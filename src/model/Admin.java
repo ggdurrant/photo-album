@@ -30,17 +30,6 @@ public class Admin {
 	 */
 	private static ArrayList<User> users = new ArrayList<User>(Arrays.asList(new User("stock")));
 
-//	public static void main(String[] args) throws ClassNotFoundException, IOException{
-//		//System.out.println(users);
-//		ArrayList<User> test = new ArrayList<User>();
-//		
-//		test.add(new User("Georgie"));
-//		test.add(new User("bonga"));
-//		
-//		for(int i=0; i<test.size(); i++){
-//			System.out.println(test.get(i).getUsername());
-//		}
-//	}
 	/**
 	 * saves users 
 	 * @throws FileNotFoundException
@@ -60,13 +49,6 @@ public class Admin {
 	public static void loadUsers() throws ClassNotFoundException, IOException{
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(storeDir+File.separator+storeFile));
 		users = (ArrayList<User>) ois.readObject();
-		//		if(users==null){
-//			users.add(new User("stock"));
-//		}
-//		else{
-//		users = (ArrayList<User>) ois.readObject();
-//		}
-//		
 	}
 	
 	public static User login(String name){
@@ -82,49 +64,7 @@ public class Admin {
 	}
 	
 	
-//	public static User login(String uName) {
-//		
-//		System.out.println("logging in");
-//		for(int i=0; i<users.size(); i++){
-//			System.out.println(users.get(i));
-//		}
-//		return users.get(0);
-//	}
-////		for(User u : users)
-////			if(u==null){
-////				System.out.println("what the fuck");
-////			if(uName.equals(u.getUsername())){
-////				return u;
-////			}
-////		}
-////		
-////		return null;
-//		
-//		//User user = null;
-////		for(int i=0; i<users.size(); i++){
-////			if(users.get(i)!=null){
-////				if(users.get(i).getUsername().equals(uName)){
-////					user = users.get(i);
-////				}
-////			}
-////		}
-//		// Searches for user with given name
-////		for (User u : users) {
-////			s = u.getUsername();
-////			System.out.println(s);
-////			if (uName.equals(u.getUsername())) {
-////				// Returns instance if found
-////				return u;
-////			}
-////		}
-//
-//		// Otherwise returns null
-////		return user;
-	
-	
-	
-	
-	
+
 	public static ArrayList<String> getUsernames(){
 		ArrayList<String> usernames = new ArrayList<String>();
 		for(User u: users){
@@ -134,7 +74,7 @@ public class Admin {
 	}
 	
 	
-	
+
 	public static boolean deleteUser(String name){
 		for(int i=0; i<users.size(); i++){
 			if(name.equals(users.get(i).getUsername())){
@@ -181,16 +121,6 @@ public class Admin {
 	
 	
 	
-//	/**
-//	 * get list of User objects
-//	 * @return
-//	 */
-//	public static List<User> getUsers(){
-//		return users;
-//	}
-//	
-	
-	
 	public static int getListSize(){
 		return users.size();
 	}
@@ -235,31 +165,6 @@ public class Admin {
 //		return usernames;
 	}
 	
-//	/**
-//	 * get list of User's names as array list of Strings
-//	 * @return
-//	 */
-//	public static List<String> getUsersNames(){
-//		List<String> usernames = null;
-//		for(int i=0; i<users.size(); i++){
-//			usernames.add(users.get(i).getUsername());
-//		}
-//		return usernames;
-//	}
-	
-	/**
-	 * add User object with username "name"
-	 * @param name
-	 */
-//	public static void addUser(String name){
-//		if(isUser(name)){
-//			// dont allow
-//			return;
-//		}
-//		else{
-//			users.add(new User(name));
-//		}
-//	}
 	
 	/**
 	 * delete User object with username "name"
@@ -271,71 +176,5 @@ public class Admin {
 				users.remove(i);
 			}
 		}
-	}
-	
-	
-//	public static User login(String uName) {
-//		String s = "";
-//		for(int i=0; i<getUsers().size(); i++){
-//			s = users.get(i).getUsername();
-//			System.out.println(s);
-//		}
-//		// Searches for user with given name
-////		for (User u : users) {
-////			s = u.getUsername();
-////			System.out.println(s);
-////			if (uName.equals(u.getUsername())) {
-////				// Returns instance if found
-////				return u;
-////			}
-////		}
-//
-//		// Otherwise returns null
-//		return null;
-//	}
-
-	
-
-	
-	
-	
-	
-//	/**
-//	 * Returns an ArrayList of the names of the users in the Library
-//	 *
-//	 * @return 
-//	 */
-//	public static ArrayList<String> getUsernames() {
-//		ArrayList<String> uNames = new ArrayList<String>();
-//		for (User u : users) {
-//			uNames.add(u.getUsername());
-//		}
-//		return uNames;
-//	}
-
-//	public static boolean deleteUser(String uName) {
-//
-//		for (int i = 0; i < users.size(); i++) {
-//			if (uName.equals(users.get(i).getUsername())) {
-//				// Returns instance if found
-//				users.remove(i);
-//				return true;
-//			}
-//		}
-//		return false;
-//	}
-
-//	public static boolean addUser(String uName) {
-//		for (User u : users) {
-//			if (u.getUsername().equals(uName)) {
-//				return false;
-//			}
-//		}
-//		users.add(new User(uName));
-//		return true;
-//	}
-
-	
-	
-	
+	}	
 }

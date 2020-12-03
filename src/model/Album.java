@@ -42,12 +42,6 @@ public class Album implements Serializable{
 	}
 	
 	
-//	public Album(String s){
-//		this.albumName = s;
-//		this.photos = new ArrayList<Photo>();
-//		this.numPhotos=0;
-//	}
-	
 	public String getAlbumName(){
 		return this.albumName;
 	}
@@ -139,8 +133,4 @@ public class Album implements Serializable{
 			
 		}
 	}
-	
-//	public String getLastModified(){
-//		
-//	}
 }

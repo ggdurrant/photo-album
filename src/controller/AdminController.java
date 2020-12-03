@@ -39,12 +39,12 @@ public class AdminController extends SceneController{
 	
 	private ObservableList<String> olist;
 	
-//	public void start(Stage s){
-//		super.start(s);
-//		olist = FXCollections.observableArrayList(Admin.getUsernames());
-//		userListView.setItems(olist);
-//		userListView.getSelectionModel().select(0);
-//	}
+	public void start(Stage s){
+		super.start(s);
+		olist = FXCollections.observableArrayList(Admin.getUsernames());
+		userListView.setItems(olist);
+		userListView.getSelectionModel().select(0);
+	}
 	
 	/**
 	 * will list all users in the "listview" when pressed

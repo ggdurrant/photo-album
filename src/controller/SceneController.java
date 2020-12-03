@@ -60,40 +60,6 @@ public abstract class SceneController {
 			}
 	}
 	
-//	public void start(Stage s) throws IOException{
-//		{	FXMLLoader loader = new FXMLLoader();
-//		loader.setLocation(SceneController.class.getResource("/Photos/view/LoginScreen.fxml"));
-//		Parent root = loader.load();
-//		loginScene = new Scene(root);
-//		loginController = loader.getController();
-//	}
-//	//
-//	{	FXMLLoader loader = new FXMLLoader();
-//		loader.setLocation(SceneController.class.getResource("/Photos/view/Admin.fxml"));
-//		Parent root = loader.load();
-//		adminScene = new Scene(root);
-//		adminController = loader.getController();
-//	}
-//	//
-//	{	FXMLLoader loader = new FXMLLoader();
-//		loader.setLocation(SceneController.class.getResource("/Photos/view/User.fxml"));
-//		Parent root = loader.load();
-//		userScene = new Scene(root);
-//		userController = loader.getController();
-//	}
-//	//
-//	{	FXMLLoader loader = new FXMLLoader();
-//		loader.setLocation(SceneController.class.getResource("/Photos/view/Album.fxml"));
-//		Parent root = loader.load();
-//		albumScene = new Scene(root);
-//		albumController = loader.getController();
-//	}
-//	//
-//		loginStage = s;
-//		albumStage = new Stage();
-//		goToLogin();
-//	}
-	
 	public static Library getLib(){
 		if(lib==null){
 			try{
@@ -187,35 +153,3 @@ public abstract class SceneController {
 	}
 	
 }
-
-	
-	
-//	public void start(Stage s, User u){
-//		this.stage = s;
-//	}
-//	
-//	public Stage loadStage(String viewURL, User u){
-//		try{
-//			FXMLLoader loader = new FXMLLoader();
-//			loader.setLocation(getClass().getResource(viewURL));
-//			AnchorPane root = loader.load();
-//			
-//			SceneController controller = loader.getController();
-//			Stage s = new Stage();
-//			controller.start(s);
-//			
-//			Scene scene = new Scene(root, root.getPrefWidth(), root.getPrefHeight());
-//			s.setScene(scene);
-//			s.show();
-//			
-//			return s;
-//		} catch (Exception e){
-//			e.printStackTrace();
-//			return null;
-//		}
-//		
-//		
-////		Stage newStage = new Stage();
-////		return newStage;
-//	}
-//}
